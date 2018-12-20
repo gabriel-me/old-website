@@ -89,7 +89,6 @@ main {
     padding: .8rem 2rem .8rem 2rem;
     border: .1rem solid white;
     border-radius: .3rem;
-    font-weight: 600;
     cursor: pointer;
     outline: none;
     transition: .5s;
