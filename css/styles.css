@@ -13,6 +13,7 @@
     list-style: none;
     color: white;
     text-decoration: none;
+    word-wrap: break-word;
 }
 
 :root {
@@ -39,23 +40,23 @@ main {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #presentation {
     position: fixed;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-image: url('../img/background.jpeg');
     background-position: 50%;
     background-repeat: no-repeat;
-    background-position: fixed;
+    background-attachment: fixed;
     background-color: black;
     text-align: center;
     font-size: 1rem;
+    overflow: auto;
 }
 
 #presentation header {
-    margin-bottom: 1vh;
+    margin: 15vh 0vh 1vh 0vh;
 }
 
 #presentation header h1 {
@@ -67,15 +68,20 @@ main {
 }
 
 #presentation header img {
-    width: 40%;
-    height: 40%;
-    box-shadow: 0px 0px 50px black;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 25px black;
     border-radius: 100%;
     cursor: pointer;
+    transition: 1s;
+}
+
+#presentation header img:hover {
+    box-shadow: 0px 0px 50px black;
 }
 
 #presentation section {
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
 }
 
 #presentation button {
@@ -218,6 +224,9 @@ article .content section header time {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 article footer {
     margin: 5rem 0rem 1rem 0rem;
+}
+
+article footer small {
     color: black;
     opacity: .5;
 }
