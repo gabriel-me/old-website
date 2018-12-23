@@ -264,9 +264,9 @@ article footer small {
     }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1600px) {
     /* Presentation */
     #presentation {
-        background-size: 150%;
+        background-size: 100%;
     }
 }
