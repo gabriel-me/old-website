@@ -60,8 +60,8 @@
 }
 
 #presentation header img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     box-shadow: 0px 0px 25px black;
     border-radius: 100%;
     cursor: pointer;
