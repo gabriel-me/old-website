@@ -79,9 +79,9 @@
 
 #presentation button {
     background: none;
-    padding: .8rem 2rem .8rem 2rem;
-    border: .1rem solid white;
-    border-radius: .3rem;
+    padding: 15px 35px 15px 35px;
+    border: 1.2px solid white;
+    border-radius: 35px;
     cursor: pointer;
     outline: none;
     transition: .5s;
