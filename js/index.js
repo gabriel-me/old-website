@@ -8,6 +8,7 @@ buttons.forEach(btn => {
             article.style.display = 'flex';
             if (window.innerWidth > 1000) {
                 presentation.style.width = '25%';
+                presentation.style.borderRight = '1px solid #D8D8D8';
                 article.style.marginLeft = '25%';
                 article.style.width = '75%';
             } else {
@@ -18,6 +19,7 @@ buttons.forEach(btn => {
         } else {
             presentation.style.display = 'flex';
             presentation.style.width = '100%';
+            presentation.style.border = 'none';
             article.style.display = 'none'
         }
     });
