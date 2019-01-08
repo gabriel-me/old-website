@@ -28,6 +28,13 @@
     background-color: #37334F;
 }
 
+/* Video background
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+video {
+    position: fixed;
+    z-index: -1000;
+}
+
 /* Presentation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #presentation {
@@ -37,11 +44,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../img/background.jpeg');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: black;
     text-align: center;
     font-size: 1rem;
     overflow: auto;
@@ -109,7 +111,8 @@ article {
     position: relative;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    background-color: white;
     width: 75%;
     padding: 0% 5% 0% 5%;
     margin-left: 25%;
@@ -224,6 +227,21 @@ article footer small {
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-aspect-ratio: 16/8) {
+    /* Video background */
+    video {
+        width: 100%;
+    }
+}
+
+@media screen and (max-device-width: 1000px) {
+    /* Video background for mobile */
+    video {
+        height: 100%;
+        width: auto;
+    }
+}
+
 @media (max-width: 350px) {
     /* Reset */
     :root {
