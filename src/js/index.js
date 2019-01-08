@@ -40,4 +40,3 @@ document.body.onresize = () => {
 
 let year = document.getElementById('year');
 year.innerHTML = new Date().getFullYear();
-year.style.color = 'black';
