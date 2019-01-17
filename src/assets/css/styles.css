@@ -28,6 +28,14 @@
     background-color: #BDBDBD;
 }
 
+
+/* Class
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.content {
+    width: 100%;
+    text-align: center;
+}
+
 /* Main
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 main {
@@ -51,9 +59,9 @@ main::before {
     background-color: rgba(0, 0, 0, .4);
 }
 
-/* Presentation
+/* Profile
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#presentation {
+#profile {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -66,27 +74,27 @@ main::before {
     overflow: auto;
 }
 
-#presentation header {
+#profile header {
     margin: 20vh 0vh 1vh 0vh;
 }
 
-#presentation header h1,
-#presentation section p,
-#presentation button 
+#profile header h1,
+#profile section p,
+#profile button 
 {
     color: white;
     font-family: 'Poppins', sans-serif;
 }
 
-#presentation header h1 {
+#profile header h1 {
     font-size: 2.2rem;
 }
 
-#presentation section p {
+#profile section p {
     font-size: 1.1rem;
 }
 
-#presentation header img {
+#profile header img {
     height: 150px;
     width: 150px;
     border: 1px solid rgba(0, 0, 0, .6);
@@ -96,11 +104,11 @@ main::before {
     transition: 1s;
 }
 
-#presentation section {
+#profile section {
     margin-bottom: 3vh;
 }
 
-#presentation button {
+#profile button {
     background: none;
     padding: 15px 40px 15px 40px;
     border: 1.2px solid white;
@@ -110,17 +118,17 @@ main::before {
     transition: 1s;
 }
 
-#presentation button:hover {
+#profile button:hover {
     color: black;
     background-color: white;
 }
 
-#presentation section ul li {
+#profile section ul li {
     display: inline-block;
     margin: 0rem .2rem 0rem .2rem;
 }
 
-#presentation section ul li img {
+#profile section ul li img {
     height: 2rem;
     cursor: pointer;
 }
@@ -128,7 +136,7 @@ main::before {
 /* Article
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 article {
-    display: none;
+    display: flex;
     position: relative;
     min-height: 100vh;
     width: 75%;
@@ -145,13 +153,6 @@ article #close {
     right: 1rem;
     top: 1rem;
     cursor: pointer;
-}
-
-/* Article > Content
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.content {
-    width: 100%;
-    text-align: center;
 }
 
 article .content h1 {
@@ -191,8 +192,6 @@ article .content a {
     transition: .5s;
 }
 
-/* Article > Content > Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 article .content section {
     margin-bottom: 3vh;
     text-align: left;
@@ -224,8 +223,6 @@ article .content section header time {
     opacity: .5;
 }
 
-/* Article > Footer
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 article footer {
     margin: 5rem 0rem 1rem 0rem;
 }
@@ -268,7 +265,6 @@ article footer small {
         padding: 0% 1% 0% 1%;
     }
 
-    /* Article > Content */
     article .content ul {
         display: flex;
         flex-direction: column;
