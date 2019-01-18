@@ -233,6 +233,13 @@ article footer small {
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-aspect-ratio: 1/2) and (max-aspect-ratio: 1/1) {
+    /* background image */
+    main {
+        background-size: 300%;
+    }
+}
+
 @media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 19/12) {
     /* background image */
     main {
