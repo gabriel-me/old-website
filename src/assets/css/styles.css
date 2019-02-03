@@ -166,7 +166,8 @@ article .content h1 {
 }
 
 article .content p, 
-article .content a 
+article .content a,
+article .content ul li
 {
     font-size: 1.1rem;
     letter-spacing: .5px;
@@ -180,10 +181,18 @@ article .content p {
 
 article .content ul li {
     display: inline-block;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    cursor: default;
+    transition: .3s;
+}
+
+article .content ul li:hover {
     color: white;
     background-color: black;
-    border-radius: .5rem;
-    padding: 1rem;
 }
 
 article .content a {
