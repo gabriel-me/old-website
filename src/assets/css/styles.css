@@ -75,7 +75,7 @@ main::before {
 }
 
 #profile header {
-    margin: 20vh 0vh 1vh 0vh;
+    margin-top: 20vh;
 }
 
 #profile header h1,
