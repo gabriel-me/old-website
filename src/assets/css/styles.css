@@ -100,7 +100,6 @@ main::before {
     border: 2px solid rgba(0, 0, 0, .6);
     border-radius: 100%;
     box-shadow: 0px 0px 200px black;
-    cursor: pointer;
     transition: 1s;
 }
 
