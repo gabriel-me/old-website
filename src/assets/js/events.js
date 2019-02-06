@@ -1,5 +1,5 @@
 let $btnKnowMore = document.querySelector('main #profile section a button')
-let $profile = document.getElementById('profile')
+let $profile = document.querySelector('#profile div')
 let $about = document.querySelector('main article')
 let $year = document.getElementById('year')
 

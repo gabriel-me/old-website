@@ -62,52 +62,52 @@ main::before {
 /* Profile
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #profile {
-    position: fixed;
     height: 100vh;
-    width: 100%;
+}
+
+#profile, 
+#profile div {
+    position: fixed;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+
+#profile div {
+    height: auto;
+    flex-direction: column;
     text-align: center;
     font-size: 1rem;
-    background: none;
-    overflow: auto;
 }
 
-#profile header {
-    margin-top: 20vh;
-}
-
-#profile header h1,
-#profile section p,
-#profile button 
+#profile div header h1,
+#profile div section p,
+#profile div button 
 {
     color: white;
     font-family: 'Poppins', sans-serif;
 }
 
-#profile header h1 {
+#profile div header h1 {
     font-size: 2.2rem;
 }
 
-#profile section p {
+#profile div section p {
     font-size: 1.1rem;
 }
 
-#profile header img {
+#profile div header img {
     height: 150px;
     width: 150px;
-    border: 2px solid rgba(0, 0, 0, .6);
     border-radius: 100%;
-    box-shadow: 0px 0px 200px black;
     transition: 1s;
 }
 
-#profile section {
+#profile div section {
     margin-bottom: 3vh;
 }
 
-#profile button {
+#profile div button {
     background: none;
     padding: 15px 40px 15px 40px;
     border: 1.2px solid white;
@@ -117,17 +117,17 @@ main::before {
     transition: 1s;
 }
 
-#profile button:hover {
+#profile div button:hover {
     color: black;
     background-color: white;
 }
 
-#profile section ul li {
+#profile div section ul li {
     display: inline-block;
     margin: 0rem .2rem 0rem .2rem;
 }
 
-#profile section ul li img {
+#profile div section ul li img {
     height: 2rem;
     cursor: pointer;
 }
