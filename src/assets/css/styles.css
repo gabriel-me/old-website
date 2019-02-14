@@ -270,11 +270,6 @@ article footer small {
 }
 
 @media (max-width: 900px) {
-    /* Reset */
-    :root {
-        font-size: 14px;
-    }
-
     /* Article */
     article {
         padding: 0% 1% 0% 1%;
