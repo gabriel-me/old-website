@@ -97,8 +97,8 @@ main::before {
 }
 
 #profile div header img {
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
     border-radius: 100%;
     transition: 1s;
 }
